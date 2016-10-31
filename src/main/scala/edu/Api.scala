@@ -4,10 +4,10 @@ import akka.actor.{ActorRef, ActorSystem}
 import akka.event.LoggingAdapter
 import akka.http.scaladsl.model.StatusCodes._
 import akka.http.scaladsl.server.Directives._
-
+import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport._
 import scala.concurrent.ExecutionContextExecutor
 
-trait Api {
+trait Api extends JsonProtocol {
   implicit val system: ActorSystem
   implicit def executor: ExecutionContextExecutor
 
