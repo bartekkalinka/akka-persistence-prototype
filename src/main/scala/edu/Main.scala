@@ -13,7 +13,7 @@ object Main extends App with Api {
 
   override val config = Config(ConfigFactory.load())
   override val logger = Logging(system, getClass)
-  override val mainActor = system.actorOf(Props(MainActor.getClass))
+  override val mainActor = system.actorOf(Props(new MainActor))
 
   Http().bindAndHandle(routes, config.httpInterface, config.httpPort)
 }
