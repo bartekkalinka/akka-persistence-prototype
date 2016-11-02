@@ -10,6 +10,7 @@ libraryDependencies ++= {
       "com.typesafe.akka" %% "akka-persistence" % akkaV,
       "com.typesafe.akka" %% "akka-stream" % akkaV,
       "com.typesafe.akka" %% "akka-http-experimental" % akkaV,
-      "com.typesafe.akka" %% "akka-http-spray-json-experimental" % akkaV
+      "com.typesafe.akka" %% "akka-http-spray-json-experimental" % akkaV,
+      "com.typesafe.akka" %% "akka-persistence-cassandra" % "0.19"
    )
 }
