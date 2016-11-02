@@ -11,6 +11,7 @@ libraryDependencies ++= {
       "com.typesafe.akka" %% "akka-stream" % akkaV,
       "com.typesafe.akka" %% "akka-http-experimental" % akkaV,
       "com.typesafe.akka" %% "akka-http-spray-json-experimental" % akkaV,
+      "org.slf4j" % "slf4j-simple" % "1.7.21",
       "com.typesafe.akka" %% "akka-persistence-cassandra" % "0.19"
    )
 }
