@@ -8,7 +8,7 @@ class Event2Serializer extends SerializerWithStringManifest {
 
   import com.sksamuel.avro4s._
 
-  override def identifier: Int = 1843123541
+  override def identifier: Int = 1843123540
 
   implicit val schemaFor = SchemaFor[Event2]
   implicit val fromRecord = FromRecord[Event2]
