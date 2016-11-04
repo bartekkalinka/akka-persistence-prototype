@@ -3,11 +3,9 @@ akka persistence journal serialization experiment
 
 Persistent actor with one command, and 2 events, persisted to cassandra, used for testing mixed serialization.
 
-java serialization version on branch `java`
+run with java serialization: `sbt "run java"`
 
-avro serialization version on branch `avro`
-
-run with `sbt run`
+run with avro serialization: `sbt "run avro"`
 
 assumes cassandra is present on `localhost:9042`
 
